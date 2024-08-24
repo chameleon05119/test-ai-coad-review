@@ -10,7 +10,6 @@ on:
 
 jobs:
   gpt-review:
-    if: contains(github.event.*.labels.*.name, 'gptReview')
     runs-on: ubuntu-latest
     steps:
       - uses: anc95/ChatGPT-CodeReview@main
